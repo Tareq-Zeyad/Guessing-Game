@@ -7,7 +7,8 @@ alert ("Welcome to my personal site " + Name);
 let score = 0;
 
 let uni = prompt("Am I a university graduated?");
-uni = uni.toLowerCase();
+function q1()
+{uni = uni.toLowerCase();
 if (uni === 'yes' || uni === 'y') {
     console.log('That is correct');
     alert ('Correct I did graduated from Mutah University');
@@ -20,9 +21,12 @@ else if (uni === 'no' || uni === 'n'){
 else { 
     alert('you didnt answer with yes or no');
 }
+}
+q1();
 
 let books = prompt("do reading books are one of my hobbies?");
-books=books.toLowerCase();
+function q2(){
+    books=books.toLowerCase();
 
 if (books === 'yes' || books === 'y'){
         console.log('reading is a magic way to feed the brain my friend');
@@ -36,9 +40,12 @@ else if (books === 'no' || books === 'n'){
 else {
     alert('your answer should be yes or no');
 }
+}
+q2();
 
 let driving = prompt("Do I have automatic driving lisence");
-driving=driving.toLowerCase();
+function q3(){
+    driving=driving.toLowerCase();
 
 if (driving === 'yes' || driving === 'y'){
     alert('Yes I am driving an automatic car');
@@ -50,9 +57,12 @@ else if (driving === 'no' || driving === 'n'){
 else {
     alert('your answer should be yes or no');
 }
+}
+q3();
 
 let linkedin=prompt('do I have linkedin profile?')
-linkedin=linkedin.toLowerCase();
+function q4(){
+    linkedin=linkedin.toLowerCase();
 
 if (linkedin === 'yes' || linkedin === 'y'){
     alert('Yes I have you can add me');
@@ -64,9 +74,12 @@ else if (linkedin === 'no' || linkedin === 'n'){
 else {
     alert('your answer should be yes or no');
 }
+}
+q4();
 
 let city=prompt('do I live in Amman?')
-city=city.toLowerCase();
+function q5(){
+    city=city.toLowerCase();
 
 if (city === 'yes' || city === 'y'){
     alert('Yes I do live there');
@@ -78,10 +91,13 @@ else if (city === 'no' || city === 'n'){
 else {
     alert('your answer should be yes or no');
 }
+}
+q5();
 
 
 
-for (let i=1; i<=4; i++){
+function q6(){
+    for (let i=1; i<=4; i++){
     let age = prompt('How old am I ?')
     age=parseInt(age);
 
@@ -103,9 +119,12 @@ for (let i=1; i<=4; i++){
         
     }
 }
+}
+q6();
 
 let brand=['Mercedes','BMW','Audi'];
-for (let i=1; i<=6; i++){
+function q7(){
+    for (let i=1; i<=6; i++){
     let car=prompt('What is my Fav car brand ?')
 
     if (car == 'Mercedes' ){
@@ -136,6 +155,8 @@ for (let i=1; i<=6; i++){
     } 
 
 }
+}
+q7();
 alert ('You have a score of '+ score +'/7')
 
 alert ("Goodbye then with best of luck Dear " + Name);
